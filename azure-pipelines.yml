@@ -19,3 +19,9 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+- task: Checkmarx AST@2
+  inputs:
+    CheckmarxService: 'cx-ast'
+    projectName: '$(Build.Repository.Name)'
+    branchName: '$(Build.SourceBranchName)'
+    tenantName: 'cx_sales_sean_casey_eula'
