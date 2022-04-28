@@ -16,4 +16,4 @@ steps:
     CheckmarxService: 'cx-ast'
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
-    tenantName: 'cx_sales_sean_casey_eula'
+    tenantName: 'cx_gs_enablement'
